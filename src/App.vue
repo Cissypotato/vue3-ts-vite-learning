@@ -4,6 +4,7 @@
 
  import { ref} from "vue";
 
+console.log(import.meta.env)
 </script>
 
 <template>
@@ -12,7 +13,7 @@
     </A>
     
     <div class="box"></div> -->
-    <B></B>
+    <!-- <B></B> -->
     
 </template>
 
