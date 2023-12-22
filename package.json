@@ -1,27 +1,28 @@
 {
   "name": "oct-demo",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "version": "1.0.0",
+  "description": "This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.",
+  "main": "index.js",
   "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc && vite build",
-    "preview": "vite preview"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server",
+    "build": "webpack"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cissypotato/vue3-ts-vite-learning.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cissypotato/vue3-ts-vite-learning/issues"
+  },
+  "homepage": "https://github.com/Cissypotato/vue3-ts-vite-learning#readme",
   "dependencies": {
-    "animate.css": "^4.1.1",
-    "element-plus": "^2.4.4",
-    "gsap": "^3.12.2",
-    "lodash": "^4.17.21",
-    "mitt": "^3.0.1",
-    "vue": "^3.3.4",
-    "vue-ueditor-wrap": "^3.0.8"
-  },
-  "devDependencies": {
-    "@types/node": "^20.10.5",
-    "@vitejs/plugin-vue": "^4.2.3",
-    "typescript": "^5.0.2",
-    "vite": "^4.4.5",
-    "vue-tsc": "^1.8.5"
+    "html-webpack-plugin": "^5.6.0",
+    "vue": "^3.3.13",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
   }
 }
