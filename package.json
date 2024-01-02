@@ -1,28 +1,20 @@
 {
-  "name": "oct-demo",
+  "name": "vite-project",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --open",
     "build": "vue-tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
-    "animate.css": "^4.1.1",
-    "element-plus": "^2.4.4",
-    "gsap": "^3.12.2",
-    "lodash": "^4.17.21",
-    "mitt": "^3.0.1",
-    "pinia": "^2.1.7",
-    "vue": "^3.3.4",
-    "vue-ueditor-wrap": "^3.0.8"
+    "vue": "^3.3.11"
   },
   "devDependencies": {
-    "@types/node": "^20.10.5",
-    "@vitejs/plugin-vue": "^4.2.3",
-    "typescript": "^5.0.2",
-    "vite": "^4.4.5",
-    "vue-tsc": "^1.8.5"
+    "@vitejs/plugin-vue": "^4.5.2",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8",
+    "vue-tsc": "^1.8.25"
   }
 }
