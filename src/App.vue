@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
 
-cont a="33"
+const a="33"
 </script>
 
 <template>
