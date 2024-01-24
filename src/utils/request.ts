@@ -9,7 +9,7 @@ const request = axios.create({
 
 //请求拦截器，同意设置请求头参数
 request.interceptors.request.use((config) => {
-  config.headers.token='2333'
+  config.headers.token = '2333'
   return config
 })
 

@@ -3,6 +3,7 @@ import { createApp } from 'vue'
 import App from '@/App.vue'
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
+import pinia from './store'
 
 //@ts-expect-error 没有ts声明文件忽略ts类型检查
 import zhCn from 'element-plus/dist/locale/zh-cn.mjs'
@@ -18,5 +19,5 @@ app.use(ElementPlus, {
 })
 app.use(globalComponents)
 app.use(router)
-
+app.use(pinia)
 app.mount('#app')
