@@ -10,7 +10,20 @@
         </template>
       </el-menu-item>
     </template>
-    <template v-if="item.children && item.children.length > 0">
+    <template v-if="item.children && item.children.length === 1">
+      <el-menu-item
+        v-if="item.children[0].meta?.isShow"
+        :index="item.children[0].path"
+      >
+        <template #title>
+          <el-icon>
+            <component :is="item.children[0].meta.icon"></component>
+          </el-icon>
+          {{ item.children[0].meta?.title }}
+        </template>
+      </el-menu-item>
+    </template>
+    <template v-if="item.children && item.children.length > 1">
       <el-sub-menu v-if="item.meta?.isShow" :index="item.path">
         <template #title>
           <el-icon>

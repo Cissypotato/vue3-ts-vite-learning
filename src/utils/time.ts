@@ -5,7 +5,7 @@ export const getTimePeriod = () => {
   const hour = new Date().getHours()
   if (hour <= 9) {
     timePeriod = '早上'
-  } else if (hour <= 12) {
+  } else if (hour <= 11) {
     timePeriod = '上午'
   } else if (hour <= 14) {
     timePeriod = '中午'

@@ -10,8 +10,9 @@
     </div>
     <div class="top-bar">top-bar</div>
     <div class="main-content">
-      mian
-      <p style="height: 100vh"></p>
+      <Main></Main>
+      <!-- mian
+      <p style="height: 100vh"></p> -->
     </div>
   </div>
 </template>
@@ -19,6 +20,7 @@
 <script setup lang="ts">
 import Logo from './logo/index.vue'
 import Menu from './menu/index.vue'
+import Main from './main/index.vue'
 import useUserStore from '@/store/modules/user'
 const menuList = useUserStore().constantRoutes
 // import { ref,reactive} from 'vue'
